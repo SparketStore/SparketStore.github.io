@@ -1,0 +1,95 @@
+body {
+    background: white;
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+/* HEADER */
+
+header {
+    background-color: #5271ff;
+    padding: 20px; 
+    height: 200px; 
+    text-align: center; 
+}
+
+header a {
+    color: white; 
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 50px; 
+}
+
+header .mobile {
+    display: none; 
+}
+
+header .logo a {
+    background-image: url("logo.png");
+    background-size: 300px;
+    background-repeat: no-repeat;  
+    display: inline-block; 
+    height: 300px; 
+    position: relative;  
+    text-indent: -9999999px; 
+    top: -55px; 
+    width: 300px; 
+}
+
+nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 2px; 
+    margin-left: 20px; 
+}
+
+/* RESPONSIVE RULES */
+
+
+/* FEATURES */
+
+.features {
+    background: white; 
+    color: gray; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: row; 
+}
+
+.features figure {
+    margin: auto; 
+    text-align: center; 
+    text-transform: uppercase; 
+    width: 200px;  
+}
+
+.features figure img {
+    border: 1px solid white; 
+    box-shadow: gray 0 0 10px; 
+    width: 200px; 
+}
+ 
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline; 
+}
+
+/* FOOTER */
+
+footer {
+    background: black;
+    color: gray; 
+    font-size: 12px; 
+    padding: 20px 20px; 
+    text-align: center; 
+}
+
