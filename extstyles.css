@@ -6,7 +6,7 @@ body {
     padding: 0; 
 }
 
-/* HEADER */
+/************ HEADER ************/
 
 header {
     background-color: #5271ff;
@@ -25,6 +25,7 @@ header a {
 header .mobile {
     display: none; 
 }
+
 
 header .logo a {
     background-image: url("images/SparketLogo.png");
@@ -68,31 +69,35 @@ section{
 				  -1px -1px 0 #000;
 }
 
-/* FEATURES */
+/************ FEATURES ************/
 
 .features {
-    background: white; 
-    color: gray; 
-    padding: 20px; 
-    display: flex; 
-    flex-direction: row; 
+  background: white; 
+  color: gray; 
+  padding: 20px; 
+  display: flex; 
+  flex-direction: row; 
 }
 
 .features figure {
-    margin: auto; 
-    text-align: center; 
-    text-transform: uppercase; 
-    width: 200px;  
+  margin: auto; 
+  text-align: center; 
+  text-transform: uppercase; 
+  width: 200px;  
 }
 
 .features figure img {
-    border: 1px solid white; 
-    box-shadow: gray 0 0 10px; 
-    width: 200px; 
-    height: 200px;
-    margin-top: 100px;
+  border: 1px solid white; 
+  box-shadow: gray 0 0 10px; 
+  width: 200px; 
+  height: 200px;
+  margin-top: 100px;
 }
  
+.features figure img:hover{
+  opacity: 0.5;
+}
+
 a {
     text-decoration: none;
 }
@@ -100,7 +105,45 @@ a:hover {
     text-decoration: underline; 
 }
 
-/* FOOTER */
+/****************** CONTAINER ************/
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+.container img:hover{
+  opacity: 0.5;
+}
+
+
+/************ FOOTER ************/
 
 footer {
     background: black;
@@ -170,10 +213,36 @@ footer {
     text-decoration: none;
   }*/
    
-  .container {
-    position: relative;
-    z-index: 1;
-    max-width: 300px;
-    margin: 0 auto;
-  }
+
+
   
+/*RULES FOR AISLE PAGES*/
+
+.container{
+  margin-top: 50px;
+  display:flex;
+  max-width:2000px;
+  width:100%;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.container img{
+  width: 750px;
+  height: 500px;
+  padding: 10px;
+  max-height: 100%;
+  max-width: 100%;
+ 
+}
+
+.container h2{
+  color: white;
+  font-size: 40px;
+  font-weight:900;
+  margin-left: 325px;
+  margin-top: -300px;
+  margin-bottom: 290px;
+  -webkit-text-stroke: 1px black;
+}
