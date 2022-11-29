@@ -31,6 +31,7 @@ header .logo a {
     background-image: url("images/SparketLogo.png");
     background-size: 200px;
     background-repeat: no-repeat;  
+    scale:121%;
     display: inline-block; 
     height: 200px; 
     position: relative;  
@@ -103,6 +104,15 @@ a {
 }
 a:hover {
     text-decoration: underline; 
+}
+
+a:visited{
+  text-decoration: none;
+
+}
+
+.features figure a{
+  color:#5271ff;
 }
 
 /****************** CONTAINER ************/
@@ -215,7 +225,7 @@ footer {
    
 
 
-  
+
 /*RULES FOR AISLE PAGES*/
 
 .container{
@@ -238,6 +248,36 @@ footer {
 }
 
 .container h2{
+  color: white;
+  font-size: 40px;
+  font-weight:900;
+  margin-left: 325px;
+  margin-top: -300px;
+  margin-bottom: 290px;
+  -webkit-text-stroke: 1px black;
+}
+
+
+.container_main{
+  margin-top: 50px;
+  display:flex;
+  max-width:2000px;
+  width:100%;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+
+.container_main img{
+  width: 750px;
+  height: 500px;
+  padding: 10px;
+  max-height: 100%;
+  max-width: 100%;
+ 
+}
+
+.container_main h4{
   color: white;
   font-size: 40px;
   font-weight:900;
