@@ -387,11 +387,13 @@ footer {
   text-align: center;
   font-size:55px;
   font-weight:300;
+  cursor:pointer;
 }
 
 .add span.cart{
   font-size:20px;
   color: lightgreen;
   border-right:2px solid rgba(0,0,0,0.2);
-  border-left:2px solid rgba(0,0,0,0.2)
+  border-left:2px solid rgba(0,0,0,0.2);
+  pointer-events: none;
 }
