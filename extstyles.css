@@ -326,3 +326,72 @@ footer {
 .image, .grid-price{
   grid-row: 1/2;
 }
+
+.grid-description{
+  font-style: italic;
+  margin-top: 140px;
+  grid-column:3/-1;
+  color:#5271ff;
+  font-size:20px;
+}
+
+.image, .grid-description{
+  grid-row: 1/2;
+}
+
+.wrapper{
+  height:60px;
+  min-width: 190px;
+  background: #5271ff;
+  border-radius: 12px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  grid-column:3/4;
+  margin-top: -170px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper span{
+  width:100%;
+  text-align: center;
+  font-size:55px;
+  font-weight:300;
+  cursor:pointer;
+}
+
+.wrapper span.num{
+  font-size:25px;
+  border-right:2px solid rgba(0,0,0,0.2);
+  border-left:2px solid rgba(0,0,0,0.2);
+  pointer-events: none;
+}
+
+
+.add{
+  height:60px;
+  min-width: 190px;
+  background: #5271ff;
+  border-radius: 12px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  grid-column:3/4;
+  margin-top: -80px;
+  border-color: lightgreen;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.add span{
+  width:100%;
+  text-align: center;
+  font-size:55px;
+  font-weight:300;
+}
+
+.add span.cart{
+  font-size:20px;
+  color: lightgreen;
+  border-right:2px solid rgba(0,0,0,0.2);
+  border-left:2px solid rgba(0,0,0,0.2)
+}
