@@ -18,13 +18,45 @@
             </ul>
         </nav>
 
-        <h1 style="color:#5271ff; text-decoration: underline;" >Apple Pie</h1>
+        <h1 style="color:#5271ff; text-decoration: underline;">Apple Pie</h1>
     </header>
 
-        <div class="grid">
-            <img src="../images/apple_pie.jpg" alt="apple pie" class = "image">
-            <p class="grid-price"> $7.99</p>
+    <div class="grid">
+        <img src="../images/apple_pie.jpg" alt="apple pie" class="image">
+        <p class="grid-price"> $7.99</p>
+        <p class="grid-description"> These apple pies are made with the best ingredients. Perfect for dessert.</p>
+        <div class="wrapper">
+            <span class="minus">-</span>
+            <span class="num">01</span>
+            <span class="plus">+</span>
         </div>
+
+        <script>
+            const plus = document.querySelector(".plus"),
+                minus = document.querySelector(".minus"),
+                num = document.querySelector(".num");
+
+            let a = 1;
+
+            plus.addEventListener("click", () => {
+                a++;
+                a = (a < 10) ? "0" + a : a;
+                num.innerText = a;
+            });
+
+            minus.addEventListener("click", () => {
+                if (a > 1) {
+                    a--;
+                    a = (a < 10) ? "0" + a : a;
+                    num.innerText = a;
+                }
+            });
+        </script>
+
+        <div class="add">
+            <span class="cart">Add to Cart</span>
+        </div>
+    </div>
     <footer>CMPE 131 Team Soft/Ware © 2022
         <ul>
             Zahra Shaikh, Nayyir Mostafa, Ricardo Mendez Waldthausen, Vinh Nguyen
