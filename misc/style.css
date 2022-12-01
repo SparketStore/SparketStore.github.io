@@ -68,6 +68,26 @@ margin-bottom: 26px;
   max-width: 300px;
   margin: 0 auto;
 }
+
+.show-cart li {
+    display: flex;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+
+.card-img-100 {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
  
 body {
   background-color: #3535ea;
@@ -75,3 +95,13 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+
+
+
+
+
+
+
+
+
