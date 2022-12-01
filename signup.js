@@ -2,8 +2,10 @@
 function store_data() {
     let name = document.getElementById('rstudentid');
     let pw = document.getElementById('rpassword');
+    let username = document.getElementById('rname');
     localStorage.setItem('rstudentid', rstudentid.value);
     localStorage.setItem('rpassword', rpassword.value);
+    localStorage.setItem('rname', rname.value);
     alert("Account created");
 }
 /*if (!localStorage.getItem("studentid")) {
