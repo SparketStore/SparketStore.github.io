@@ -181,36 +181,6 @@ footer {
     display: none;
 }
 
-.form > *:first-child {
-    margin-top: 0;
-}
-
-.form > *:last-child {
-    margin-bottom: 0;
-}
-
-.form__title {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.form__message {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.form__message-success {
-    color: var(--color-success);
-}
-
-.form__message-error {
-    color: var(--color-error);
-}
-
-.form__input-group {
-    margin-bottom: 1rem;
-}
-
 .form__input {
     font-family: "Roboto", sans-serif;
     outline: 0;
@@ -228,15 +198,6 @@ footer {
     }
 */
 
-.form__input--success {
-    color: var(--color-success);
-}
-
-.form__input--error {
-    color: var(--color-error);
-    border-color: var(--color-error);
-}
-
 .form__button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -252,30 +213,9 @@ footer {
     transition: all 0.3 ease;
     cursor: pointer;
 }
+.form__name{
 
-    .form__button:hover {
-        background: var(--color-primary-dark);
-    }
-
-    .form__button:active {
-        transform: scale(0.98);
-    }
-
-.form__text {
-    text-align: center;
 }
-
-.form__link {
-    color: var(--color-secondary);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-    .form__link:hover {
-        text-decoration: underline;
-    }
-
-
 
 .login-page {
     width: 360px;
