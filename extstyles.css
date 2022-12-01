@@ -11,7 +11,7 @@ body {
 header {
     background-color: #5271ff;
     padding: 20px; 
-    height: 200px; 
+    height: 250px; 
     text-align: center; 
 }
 
@@ -31,7 +31,7 @@ header .logo a {
     background-image: url("images/SparketLogo.png");
     background-size: 200px;
     background-repeat: no-repeat;  
-    scale:121%;
+    scale:125%;
     display: inline-block; 
     height: 200px; 
     position: relative;  
@@ -113,6 +113,9 @@ a:visited{
 
 .features figure a{
   color:#5271ff;
+}
+.features figure c {
+    color: #FFFF;
 }
 
 .aboutus {
