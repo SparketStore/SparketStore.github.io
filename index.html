@@ -7,8 +7,10 @@
     <title>Sparket | Home</title>
     <link rel="stylesheet" href="extstyles.css">
     <link rel="stylesheet" href="misc/demo.css">
-    
+    <link rel="stylesheet" href="misc/bootstrap.min.css"> 
+    <!-- Style CSS -->
     <link rel="stylesheet" href="misc/style.css">
+    <link rel="stylesheet" href="misc/demo.css">
 </head>
 
 <body>
@@ -16,115 +18,216 @@
         <nav>
             <ul>
                 <li class="desktop"><a href="index.html">Home</a></li>
-                <li class="desktop"><a href="aboutus.html">About Us</a></li>
                 <li class="logo"><a href="index.html">Sparket Logo</a></li>
-                <li class="desktop"><a href="shoppingcart.html">Shopping Cart</a></li>
-
-                <li class="desktop"><a href="signuplogin.html">Login</a></li>
+                <li class="desktop"><a href="aboutus.html">About Us</a></li>
             </ul>
         </nav>
-        <h1 style="color:#5271ff"> Welcome to Sparket! </H1>
+        <h1 style="color:#5271ff"> Welcome to Sparket! </h1>
+
+        <div class="col">
+            <div class="col">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
+        </div>
+
+
     </header>
 
-    <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
-    <div class="row">
-        <div class="col">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
-    </div>
-</nav>
+    
+
+        <section class="features">
 
 
-    <section class="features">
+            <figure>
+                <a href="aisles/school_supplies.html" target="_blank" rel="noopender" style="font-size: 21px;" style="color: black;">
+                    <img src="images/school_supplies.jpg" alt="charging laptop near opened notepad and computer mouse" style="margin-top: 100px;">
+                    School Supplies
+                </a>
+
+                <div class="card" style="width: 10rem;">
+                    <img class="card-img-100" src="./images/pencil.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Pencil</h4>
+                        <p class="card-text">Price: $0.5</p>
+                        <a href="#" data-name="Pencil" data-price="0.5" class="add-to-cart btn btn-primary" data-toggle="modal" >Add to cart</a>
+                    </div>
+
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-100" src="./images/notebook.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Notebook</h4>
+                            <p class="card-text">Price: $1.5</p>
+                            <a href="#" data-name="Notebook" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                        </div>
 
 
-        <figure>
-            <a href="aisles/school_supplies.html" target="_blank" rel="noopender" style="font-size: 21px;" style="color: black;">
-                <img src="images/school_supplies.jpg" alt="charging laptop near opened notepad and computer mouse" style="margin-top: 100px;">
-                School Supplies</a>
-
-            <div class="card" style="width: 10rem;">
-  <img class="card-img-100" src="./images/pencil.jpg" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Pencil</h4>
-    <p class="card-text">Price: $0.5</p>
-    <a href="#" data-name="Pencil" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
-
-            <div class="card" style="width: 10rem;">
-  <img class="card-img-100" src="./images/pencil.jpg" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Pencil</h4>
-    <p class="card-text">Price: $0.5</p>
-    <a href="#" data-name="Pencil" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
+            </figure>
 
 
-        </figure>
+            <figure>
+                <a href="aisles/fruits.html" target="_blank" rel="noopender" style="font-size: 21px;">
+                    <img src="images/fruits.jpg" alt="sliced fruits on tray">
+                    Fruits
+                </a>
+                <div class="card" style="width: 10rem;">
+                    <img class="card-img-100" src="./images/apples.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Apples</h4>
+                        <p class="card-text">Price: $0.5</p>
+                        <a href="#" data-name="Apples" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-100" src="./images/bananas.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Bananas</h4>
+                            <p class="card-text">Price: $0.5</p>
+                            <a href="#" data-name="Bananas" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                        </div>
+
+                    </div>
+
+            </figure>
 
 
-        <figure>
-            <a href="aisles/fruits.html" target="_blank" rel="noopender" style="font-size: 21px;">
-                <img src="images/fruits.jpg" alt="sliced fruits on tray">
-                Fruits
-            </a>
-        <div class="card" style="width: 10rem;">
-  <img class="card-img-100" src="./images/apples.jpg" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Apples</h4>
-    <p class="card-text">Price: $0.5</p>
-    <a href="#" data-name="Apples" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
+            <figure>
+                <a href="aisles/meat.html" target="_blank" rel="noopender" style="font-size: 21px;">
+                    <img src="images/meat.jpg" alt="grilled meats on skewers">
+                    Meat
+                </a>
+                <div class="card" style="width: 10rem;">
+                    <img class="card-img-100" src="./images/steak.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Steak</h4>
+                        <p class="card-text">Price: $0.5</p>
+                        <a href="#" data-name="Steak" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
 
-            <div class="card" style="width: 10rem;">
-  <img class="card-img-100" src="./images/bananas.jpg" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Bananas</h4>
-    <p class="card-text">Price: $0.5</p>
-    <a href="#" data-name="Bananas" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
- 
-</div>
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-100" src="./images/chicken.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Chicken</h4>
+                            <p class="card-text">Price: $0.5</p>
+                            <a href="#" data-name="Chicken" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                        </div>
 
-        </figure>
+                    </div>
 
 
-        <figure>
-            <a href="aisles/meat.html" target="_blank" rel="noopender" style="font-size: 21px;">
-                <img src="images/meat.jpg" alt="grilled meats on skewers">
-                Meat</a>
+            </figure>
+            <figure>
+                <a href="aisles/vegetables.html" target="_blank" rel="noopender" style="font-size: 21px;">
+                    <img src="images/vegetables.jpg" alt="variety of vegetables">
+                    Vegetables
+                </a>
 
-        </figure>
-        <figure>
-            <a href="aisles/vegetables.html" target="_blank" rel="noopender" style="font-size: 21px;">
-                <img src="images/vegetables.jpg" alt="variety of vegetables">
-                Vegetables</a>
+                <div class="card" style="width: 10rem;">
+                    <img class="card-img-100" src="./images/tomatoes.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Tomatoes</h4>
+                        <p class="card-text">Price: $0.5</p>
+                        <a href="#" data-name="Tomatoes" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
 
-        </figure>
-        <figure>
-            <a href="aisles/dairy.html" target="_blank" rel="noopender" style="font-size: 21px;">
-                <img src="images/dairy.jpg" alt="portrait of cow standing in pasture">
-                Dairy</a>
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-100" src="./images/carrots.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Carrots</h4>
+                            <p class="card-text">Price: $0.5</p>
+                            <a href="#" data-name="Carrots" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                        </div>
 
-        </figure>
-        <figure>
-            <a href="aisles/pastries.html" target="_blank" rel="noopender" style="font-size: 21px;">
-                <img src="images/pastries.jpg" alt="selective photo of cookies on container">
-                Pastries</a>
+                    </div>
 
-        </figure>
-    </section>
-    <footer>
-        CMPE 131 Team Soft/Ware © 2022
-        <ul>
-            Zahra Shaikh, Nayyir Mostafa, Ricardo Mendez Waldthausen, Vinh Nguyen
-        </ul>
-    </footer>
+            </figure>
+            <figure>
+                <a href="aisles/dairy.html" target="_blank" rel="noopender" style="font-size: 21px;">
+                    <img src="images/dairy.jpg" alt="portrait of cow standing in pasture">
+                    Dairy
+                </a>
+                <div class="card" style="width: 10rem;">
+                    <img class="card-img-100" src="./images/yogurt.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">Yogurt</h4>
+                        <p class="card-text">Price: $0.5</p>
+                        <a href="#" data-name="Yogurt" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script  src="./js/script.js"></script>
-     
-  </body>
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-100" src="./images/milk.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">Milk</h4>
+                            <p class="card-text">Price: $0.5</p>
+                            <a href="#" data-name="Milk" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                        </div>
+
+                    </div>
+            </figure>
+            <figure>
+                <a href="aisles/pastries.html" target="_blank" rel="noopender" style="font-size: 21px;">
+                    <img src="images/pastries.jpg" alt="selective photo of cookies on container">
+                    Pastries
+                </a>
+
+                <div class="card" style="width: 10rem;">
+                    <img class="card-img-100" src="./images/chocolate_chip_cookies.jpg" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title">chocolate_chip_cookies</h4>
+                        <p class="card-text">Price: $0.5</p>
+                        <a href="#" data-name="chocolate_chip_cookies" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                    </div>
+
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-100" src="./images/grapes.jpg" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">grapes</h4>
+                            <p class="card-text">Price: $0.5</p>
+                            <a href="#" data-name="grapes" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
+                        </div>
+
+                    </div>
+
+            </figure>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="show-cart table">
+                        </table>
+                        <div>Total price: $<span class="total-cart"></span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Order now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END EDMO HTML (Happy Coding!)-->
+        </main>
+
+
+        <footer>
+            CMPE 131 Team Soft/Ware © 2022
+            <ul>
+                Zahra Shaikh, Nayyir Mostafa, Ricardo Mendez Waldthausen, Vinh Nguyen
+            </ul>
+        </footer>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="./js/script.js"></script>
+
+</body>
 </body>
 
 </html>
