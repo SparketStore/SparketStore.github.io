@@ -417,3 +417,11 @@ max-width: 700px;
   border-right:2px solid rgba(0,0,0,0.2);
   border-left:2px solid rgba(0,0,0,0.2);
 }
+
+.campus{
+  display:block;
+  height:60%;
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+}
